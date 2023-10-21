@@ -22,8 +22,3 @@ Test the "Delete User" functionality.
 Test the filter options (A-Z, Z-A, Last Modified, Last Inserted).
 Test the search functionality for Name, Mobile, and Email.
 
-Unit Test Structure:
-
-Organize your tests into different test suites for each component or functionality (e.g., one suite for Signup, one for Login, one for Dashboard).
-Use test fixtures to set up initial states and data for testing.
-Use assertions to check that the application behaves as expected.
