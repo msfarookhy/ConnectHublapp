@@ -1,5 +1,5 @@
 {
-  "name": "management-app",
+  "name": "user-app",
   "version": "1.0.0",
   "description": "backend",
   "main": "backend/server.mjs",
