@@ -12,7 +12,7 @@ function Header() {
   const isAuthenticated = !!localStorage.getItem("token");
 
   const handleLogout = () => {
-    let token = localStorage.getItem("token");
+    // let token = localStorage.getItem("token");
     localStorage.removeItem("token");
     if (!localStorage.getItem("token")) {
       navigate("/");
@@ -66,10 +66,10 @@ function Header() {
                   <Card.Title>Please Log In To View Content</Card.Title>
                   <Button variant="outline-light" style={{ width: "100%" }}>
                     <Link to="/login" className="text-decoration-none">
-                      LOGIN
+                      Login
                     </Link>
                   </Button>
-                  <span style={{ marginRight: '20px' }}></span>
+                  <span style={{ marginRight: '20px' }}></span> <br/>
                   <Button variant="outline-light" style={{ width: "100%" }}>
                     <Link to="/signup" className="text-decoration-none">
                       Sign Up
