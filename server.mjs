@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://mindfull-gurukulapp.vercel.app" }));
 
 // Start the server
 const port = process.env.PORT || 5000;
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
   
   app.use(express.static(path.join(__dirname, 'client/build')))
   
-  app.get('https://mindfull-gurukulapp.vercel.app/', function (req, res) {
+  app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname+'/client/build/index.html'))
   });
   
