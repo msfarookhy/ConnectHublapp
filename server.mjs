@@ -35,7 +35,7 @@ logger.info("bbbbbbbbbbbbbbb");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const allowedOrigins = ["https://mindfull-gurukulapp-8m7s7c5ay-msfarookhys-projects.vercel.app/"];
+const allowedOrigins = ["https://mindfull-gurukulapp.vercel.app/"];
 
 app.use(cors({
   origin: allowedOrigins, // Allow requests from the specified production domains
@@ -51,9 +51,9 @@ app.listen(port, () => {
 
 
 
-  app.use(express.static(path.join('./frontend/build')));
+  app.use(express.static('frontend','build'));
   app.get('/', function (req, res) { // Use '/' instead of './'
-    res.sendFile(path.join('./frontend/build/index.html'));
+    res.sendFile(path.join('frontend','build','index.html'));
 
     logger.info("Production environment");
   });
