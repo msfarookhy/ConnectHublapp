@@ -1,8 +1,11 @@
 import jwt from "jsonwebtoken";
 import asyncHandler from "express-async-handler";
 import User from "../models/userModel.mjs";
+import dotenv from 'dotenv';
 
-const JWT_SECRET = "MisbahFarooqui123456";
+dotenv.config();
+
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const protect = asyncHandler(async (req, res, next) => {
   let token;
