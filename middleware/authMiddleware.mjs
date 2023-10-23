@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = "secretIsSecret";
 
 const protect = asyncHandler(async (req, res, next) => {
   let token;
