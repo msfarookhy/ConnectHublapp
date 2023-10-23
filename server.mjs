@@ -51,9 +51,9 @@ app.listen(port, () => {
 
 
 
-  app.use(express.static(path.join(__dirname, './frontend/build')));
+  app.use(express.static(path.join('./frontend/build')));
   app.get('/', function (req, res) { // Use '/' instead of './'
-    res.sendFile(path.join(__dirname, './frontend/build/index.html'));
+    res.sendFile(path.join('./frontend/build/index.html'));
 
     logger.info("Production environment");
   });
