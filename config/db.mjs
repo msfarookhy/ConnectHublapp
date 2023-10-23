@@ -4,7 +4,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 const connectDB = async () => {
   try {
-    mongoose.connect(process.env.MONGODB_URL, {
+    console.log("inside db");
+
+    mongoose.connect("mongodb+srv://msfarookhy:94572Saif@cluster0.gocudnr.mongodb.net/userTest", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
