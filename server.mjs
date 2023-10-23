@@ -35,7 +35,7 @@ logger.info("bbbbbbbbbbbbbbb");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const allowedOrigins = ["mindfull-gurukulapp.vercel.app"];
+const allowedOrigins = ["https://mindfull-gurukulapp-8m7s7c5ay-msfarookhys-projects.vercel.app/"];
 
 app.use(cors({
   origin: allowedOrigins, // Allow requests from the specified production domains
