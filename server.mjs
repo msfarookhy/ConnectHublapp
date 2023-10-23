@@ -49,8 +49,7 @@ app.listen(port, () => {
   logger.info(`Server is running on port ${port}`);
 });
 
-if (process.env.NODE_ENV === "production") {
-  logger.info("PPPPPPPPPPPPPPPPP");
+
 
   app.use(express.static(path.join(__dirname, './frontend/build')));
   app.get('/', function (req, res) { // Use '/' instead of './'
@@ -58,9 +57,7 @@ if (process.env.NODE_ENV === "production") {
 
     logger.info("Production environment");
   });
-    
 
-}
 logger.info("RRRRRRRRRRRRRR");
 
 app.use("/api/mindfull", routes);
