@@ -232,7 +232,7 @@ function Home() {
   const handleDeleteUserCancel = () => {
     setShowDeleteModal(false);
   };
-
+debugger
   const handleFilterChange = (event) => {
     const newFilter = event.target.value;
     setSelectedFilter(newFilter);
@@ -245,7 +245,7 @@ function Home() {
 
   const fetchDataFromBackend = (filter) => {
     axios
-      .get(`http://localhost:5000/api/mindul/get_filtered_sub_users?filter=${filter}`)
+      .get(`http://localhost:5000/api/mindfull/get_filtered_sub_users?filter=${filter}`)
       .then((response) => {
         if (response.data.Data.length > 0) {
           setTableData(response.data.Data);
