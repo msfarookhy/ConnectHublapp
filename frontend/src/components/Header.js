@@ -70,6 +70,7 @@ function Header() {
                     </Link>
                   </Button>
                   <span style={{ marginRight: '20px' }}></span> <br/>
+                  
                   <Button variant="outline-light" style={{ width: "100%" }}>
                     <Link to="/signup" className="text-decoration-none">
                       Sign Up
