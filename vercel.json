@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "User-App",
+  "builds": [
+     { 
+      "src": "*.mjs",
+      "use": "@vercel/node" }
+  ],
+  "routes": [
+     {
+       "src": "/(.*)", 
+     "dest": "/" }
+  ]
+}
