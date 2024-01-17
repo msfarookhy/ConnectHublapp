@@ -1,4 +1,4 @@
-# ConnectHUBapp  UNIT TESTING
+# ConnectHubApp  UNIT TESTING
 
 Signup Screen Tests:.
 Test that the "Gender" radio buttons work correctly.
